@@ -11,20 +11,76 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="imagen">
-            <img src="./img/controller.svg" alt="control" id="logo">
-        </div>
-        <div class="titulo">
-            <h1 id="encabezado">Videojuegos</h1>
-        </div>
-        <div class="boton">
-            <button type="button" class="btn btn-dark">Ingresar</button>            
-        </div>
+    <header>
+        <nav class="nav">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-sm">
+                        <img src="./img/controller.svg" alt="logoPagina" id="logo">
+                    </div>
+                    <div class="col-sm">
+                        <h1 id="titulo">Videojuegos</h1>
+                    </div>
+                    <div class="col-sm">
+                        <button type="button" class="btn btn-dark" id="boton">Ingresar</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
-    <main class="main">
-
+    <main>
+        <section class="seccion">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col">
+                        <h2 id="tituloDos">Venta de videojuegos para consolas</h2>
+                        <p id="parrafo">Inicie sesión para ver catálogo</p>
+                    </div>
+                    <div class="col">
+                        <img src="./img/robot.svg" alt="logoRobot" id="robot">
+                    </div>
+                </div>
+            </div>
+            <!--
+                 <div class="modal " id="modalLogin" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title" id="modalLoginLabel">Ingresá</h3>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Cerrar"></button>
+                        </div>
+                        <div class="modal-body py-2 px-4">
+                            <input id="emailLogin" class="form-control my-4" type="email"
+                                placeholder="Ingresa tu correo electrónico" required>
+                            <input id="passwordLogin" class="form-control my-4" type="password"
+                                placeholder="Ingresa tu contraseña" required>
+                        </div>
+                        <div class="modal-footer d-block">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="recordarme">
+                                <label class="form-check-label" for="recordarme">
+                                    Recordarme en este equipo
+                                </label>
+                            </div>
+                            <button class="btn btn-outline-primary" id="login" type="submit">Ingresar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            -->
+        </section>
     </main>
+    <footer class="footer">
+        <div>
+            <p>Proyecto - Videojuegos</p>
+        </div>
+        <div id="consolas">
+            <img src="./img/playstation.svg" alt="logoPlay">
+            <img src="./img/xbox.svg" alt="logoXbox">
+            <img src="./img/steam.svg" alt="logoSteam">
+        </div>
+    </footer>
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
