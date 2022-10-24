@@ -30,3 +30,4 @@ const juegos = [{
 }]
 
 const btnLogin = document.getElementById('boton');
+//Continuación
