@@ -45,7 +45,7 @@ const btnIngresar = document.getElementById('botonIngresar'),
 function ingresar(bd, usuario, clave) { //DB Array de usuarios
     let encontrado = bd.find((db) => db.correo == usuario);
 
-    if (typeof encontrado === 'undefined') {//Typeof nos dice el tipo de dato de determinada variable
+    if (typeof encontrado === 'undefined') {
         return false;
     } else {
         if (encontrado.clave != clave) {
@@ -95,7 +95,7 @@ function mostrarInformacion(array, clase) {
     });
 }
 
-function informacionJuegos(array) {//Función para tarjetas de juegos
+function informacionJuegos(array) {
     tarjetas.innerHTML = '';
     array.forEach(element => {
         let html = `<div class="card cardJuego" id="tarjeta${element.nombre}">
@@ -112,7 +112,7 @@ function informacionJuegos(array) {//Función para tarjetas de juegos
 }
 
 btnLogin.addEventListener('click', (e) => {
-    e.preventDefault();//para no recargar página si el usuario escribio mal
+    e.preventDefault();
     if (!correoLogin.value || !passLogin.value) {
         alert('Ambos campos son requeridos');
     } else {
