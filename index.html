@@ -22,7 +22,11 @@
                         <h1 id="titulo">Videojuegos</h1>
                     </div>
                     <div class="col-sm">
-                        <button type="button" class="btn btn-dark" id="botonIngresar">Ingresar</button>
+                            <button id="botonIngresar" class="btn btn-outline-primary me-2 toggles" type="button" data-bs-toggle="modal"
+                                data-bs-target="#modalLogin">Ingresar</button>
+                            <button id="botonSalir" class="btn btn-outline-secondary d-none toggles" type="button">Salir</button>
+                            <p id="nombreUsuario" class="d-none toggles"></p>        
+                        <!--<button type="button" class="btn btn-dark" id="botonIngresar">Ingresar</button>-->
                         <!--<button type="button" class="btn btn-light" id="botonSalir">Light</button>-->                       
                     </div>
                 </div>
@@ -42,19 +46,18 @@
                     </div>
                 </div>
             </div>
-            <!--
-                 <div class="modal " id="modalLogin" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
+            <div class="modal " id="modalLogin" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h3 class="modal-title" id="modalLoginLabel">Ingresá</h3>
+                            <h3 class="modal-title" id="modalLoginLabel">Ingresar</h3>
                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                 aria-label="Cerrar"></button>
                         </div>
                         <div class="modal-body py-2 px-4">
-                            <input id="emailLogin" class="form-control my-4" type="email"
+                            <input id="correo" class="form-control my-4" type="email"
                                 placeholder="Ingresa tu correo electrónico" required>
-                            <input id="passwordLogin" class="form-control my-4" type="password"
+                            <input id="pass" class="form-control my-4" type="password"
                                 placeholder="Ingresa tu contraseña" required>
                         </div>
                         <div class="modal-footer d-block">
@@ -69,7 +72,11 @@
                     </div>
                 </div>
             </div>
-            -->
+        </section>
+        <section id="logged" class="d-none toggles">
+            <h2>Contenido para usuarios logueados</h2>
+            <p>Juegos en venta.</p>
+            <div id="tarjetas" class="card-group"></div>
         </section>
     </main>
     <footer class="footer">
@@ -85,5 +92,4 @@
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
-
 </html>
